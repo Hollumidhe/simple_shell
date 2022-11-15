@@ -139,8 +139,6 @@ Implement the setenv and unsetenv builtin commands
 
 Implement the builtin command cd:
 
-
-
 * Changes the current directory of the process.
 
 * Command syntax: cd [DIRECTORY]
@@ -154,17 +152,14 @@ Implement the builtin command cd:
 man chdir, man getcwd
 
 
-
 ### Task 11 - Simple shell 1.0 +
 
 * Handle the commands separator ;
 
 
-
 ### Task 12 && and || - Simple shell 1.0 +
 
 * Handle the && and || shell logical operators
-
 
 
 ### Task 13 - Simple shell 1.0 +
@@ -175,9 +170,9 @@ man chdir, man getcwd
 
   * alias: Prints a list of all aliases, one per line, in the form name='value'
 
-  alias name [name2 ...]: Prints the aliases name, name2, etc 1 per line, in the form name='value'
+  * alias name [name2 ...]: Prints the aliases name, name2, etc 1 per line, in the form name='value'
 
-  alias name='value' [...]: Defines an alias for each name whose value is given. If name is already an alias, replaces its value with value
+  * alias name='value' [...]: Defines an alias for each name whose value is given. If name is already an alias, replaces its value with value
 
 
 
@@ -190,11 +185,9 @@ man chdir, man getcwd
 * Handle the $$ variable
 
 
-
 ### Task 15 - Simple shell 1.0 +
 
 * Handle comments (#)
-
 
 
 ### Task 16 - Simple shell 1.0 +
