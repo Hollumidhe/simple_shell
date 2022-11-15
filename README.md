@@ -2,6 +2,9 @@
 
 
 
+This repository contains the files for ALX simple_shell. It can be compiled using GCC and will execute a simple shell that can be used for some basic tasks and programs most commonly found in the /bin/ folder.
+
+
 ## Table of content
 
 ### Task 0 - Write a beautiful code that passes the Betty checks
