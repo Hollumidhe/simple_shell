@@ -141,7 +141,7 @@ Implement the builtin command cd:
 
 * Changes the current directory of the process.
 
-* Command syntax: cd [DIRECTORY]
+* Command syntax: cd [DIRECTORY] important too
 
 * If no argument is given to cd the command must be interpreted like cd $HOME
 
@@ -180,19 +180,20 @@ man chdir, man getcwd
 
 * Handle variables replacement
 
-* Handle the $? variable
+* Handle the $? variable using th
 
 * Handle the $$ variable
 
 
 ### Task 15 - Simple shell 1.0 +
 
+Comments are essential
 * Handle comments (#)
 
 
 ### Task 16 - Simple shell 1.0 +
 
-* Usage: simple_shell [filename]
+* Usage: simple_shell [filename] fd
 
 * Your shell can take a file as a command line argument
 

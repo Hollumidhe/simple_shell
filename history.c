@@ -16,7 +16,9 @@ char *get_history_file(info_t *info)
 		return (NULL);
 	buf = malloc(sizeof(char) * (_strlen(dir) + _strlen(HIST_FILE) + 2));
 	if (!buf)
+	{
 		return (NULL);
+	}
 	buf[0] = 0;
 	_strcpy(buf, dir);
 	_strcat(buf, "/");
@@ -25,7 +27,7 @@ char *get_history_file(info_t *info)
 }
 
 /**
- * write_history - creates a file, or appends to an existing file
+ * write_history - creates or appends to an existing file
  * @info: the parameter struct
  *
  * Return: 1 on success, else -1

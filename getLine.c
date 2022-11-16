@@ -2,7 +2,7 @@
 
 /**
  * input_buf - buffers chained commands
- * @info: parameter struct
+ * @info: parameter struct - since using an struct
  * @buf: address of buffer
  * @len: address of len var
  *
@@ -46,7 +46,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 /**
  * get_input - gets a line minus the newline
- * @info: parameter struct
+ * @info: parameter struct breaking it down
  *
  * Return: bytes read
  */
@@ -105,7 +105,9 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 		return (0);
 	r = read(info->readfd, buf, READ_BUF_SIZE);
 	if (r >= 0)
+	{
 		*i = r;
+	}
 	return (r);
 }
 
